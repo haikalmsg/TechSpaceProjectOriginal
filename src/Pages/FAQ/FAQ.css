@@ -1,0 +1,19 @@
+.faqWrapper{
+    width: 80vw;
+    margin: 20vh 10vw;
+
+}
+.answer{
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: large;
+    font-weight: light;
+    text-align: justify;
+}
+.faqTitle{
+    text-align: center;
+    font-size: xx-large;
+}
+.question{
+    font-size: larger;
+}

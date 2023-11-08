@@ -1,0 +1,71 @@
+.checkoutWrapperReal{
+    min-height: 80vh;
+    margin: 20vh 10vw;
+    display : flex;
+}
+.formWrapper{
+    width: 50vw;
+    height: 41vh;
+}
+.checkoutItemWrapper{
+    width: 30vw;
+    height: 41vh;
+
+}
+.nameWrapper{
+    display: flex;
+    gap: 5vh;
+    margin-top: 30px;
+
+}
+.formsnametext{
+    width: 28vw;
+    height: 35px;
+}
+.checkout{
+    padding-left: 10px;
+    height: 35px;
+}
+.fwForms{
+    width: 49.1vw;
+    margin-top: 30px;
+}
+.formsCardNumber{
+    width : 40vw;
+}
+.formsCVV{
+    width : 9vw
+}
+.ChekoutNowButton{
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    width: 50vw;
+}
+.ChekoutNowButton:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.pd{
+    padding: 0 2.5vw;
+    margin: 10px 0;
+}
+.itemsListText{
+    padding : 0 2.5vw;
+    margin-bottom: 10px;
+}
+.totPurchase{
+    text-align: end;
+}
+.totalCheckout{
+    text-align: end;
+    font-size: large;
+    font-weight: bold;
+}
+.itemsList{
+    min-height: 31vh ;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 31vh;
+}

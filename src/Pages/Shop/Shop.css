@@ -1,0 +1,41 @@
+.ProductWrapper{
+    display: grid;
+    width: 80vw;
+    padding: 5vh 10vw;
+    grid-template-columns: repeat(4,1fr);
+    gap : 42px
+
+}
+
+.BannerContainer{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../../../public/bannerip15.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    overflow-x: hidden;
+    margin-top: 100px;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media (min-width : 1286px) and (max-width : 1720px) {
+  .ProductWrapper{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width : 0px) and (max-width : 1285px) {
+  .ProductWrapper{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

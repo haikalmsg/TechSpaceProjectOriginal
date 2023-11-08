@@ -1,0 +1,24 @@
+.chekOutItem{
+    width: 25vw;
+    margin: 0px 2.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    
+}
+.checkoutItemImg{
+    height: 50px;
+}
+.checkoutItemBlockOne{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+}
+.qty{
+    text-align: end;
+}
+.checkoutItemBlocktwo{
+    padding: 20px;
+}

@@ -1,0 +1,32 @@
+.cartItemWrapper{
+    border : 1px solid black;
+    width : 80vw;
+    height: 20vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.cartImg{
+    height: 15vh;
+}
+.productPrice{
+    text-align: left;
+}
+.controls{
+    display: flex;
+    margin-right: 5vw;
+    gap : 5px;
+}
+.firstBox{
+    display: flex;
+    align-items: center;
+    gap : 30px;
+}
+.del{
+    padding-left: 13px;
+    padding-right: 13px;
+}

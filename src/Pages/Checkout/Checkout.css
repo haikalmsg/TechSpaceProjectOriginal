@@ -69,3 +69,11 @@
     overflow-x: hidden;
     max-height: 31vh;
 }
+.CObody{
+    min-height: 80vh;
+}
+.succesWrapper{
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    text-align: center;
+}

@@ -25,7 +25,7 @@ function Cart(){
             {!disp && <div className="emptyWrapper">
                 <h1 className="emptyText">Your Cart is Empty</h1>
                 <br></br>
-                <h5 className="emptyTextSmall">Click <Link to = "/">Here</Link> to Browse Our Collection</h5>
+                <h5 className="emptyTextSmall">Click <Link to = "/TechSpaceProject/">Here</Link> to Browse Our Collection</h5>
             </div>}
             {disp && <div className="TableWrapper">
                 {PRODUCTS.map((product)=>{

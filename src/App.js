@@ -19,12 +19,12 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Shop />}/>
-          <Route path='/cart' element = {<Cart />}/>
-          <Route path = '/aboutus' element = {<AboutUs/>}/>
-          <Route path = '/cart/checkout' element = {<Checkout />} />
-          <Route path ='/FAQ' element= {<FAQ />} />
-          <Route path = '/privacy' element = {<Privacy />}/>
+          <Route exact path='/TechSpaceProject/' element={<Shop />}/>
+          <Route path='/TechSpaceProject/cart' element = {<Cart />}/>
+          <Route path = '/TechSpaceProject/aboutus' element = {<AboutUs/>}/>
+          <Route path = '/TechSpaceProject/cart/checkout' element = {<Checkout />} />
+          <Route path ='/TechSpaceProject/FAQ' element= {<FAQ />} />
+          <Route path = '/TechSpaceProject/privacy' element = {<Privacy />}/>
         </Routes>
         <Footer />
       </Router>

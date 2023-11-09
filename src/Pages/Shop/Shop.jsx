@@ -15,6 +15,7 @@ function Shop(){
     return(
         <div className="ShopWrapper">
             <div className="BannerContainer">
+                <h1 className="shopText">Our Products</h1>
             </div>
             <div className="ProductWrapper">
                 {kartu}

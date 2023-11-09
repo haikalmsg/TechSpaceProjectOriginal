@@ -7,9 +7,33 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 
 function Checkout(){
+    function getWindowDimensions() {
+        const { innerWidth: width, innerHeight: height } = window;
+        return {
+          width,
+          height
+        };
+    }
+    function useWindowDimensions() {
+      const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+    
+      useEffect(() => {
+        function handleResize() {
+          setWindowDimensions(getWindowDimensions());
+        }
+    
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+    
+      return windowDimensions;
+    }
+    const {height, width} = useWindowDimensions()
+    let pot = true
     const {cart, getTotalAmmount, forget} = React.useContext(ShopContext)
     const navigate = useNavigate()
     let tot = getTotalAmmount()
@@ -20,6 +44,10 @@ function Checkout(){
     if(tot === 0){
         disp = false
     }
+    if(width < 1090){
+        pot = false
+    }
+
     const notify = () => toast.success('Success!', {
         position: "top-right",
         autoClose: 3000,
@@ -38,7 +66,7 @@ function Checkout(){
     return(
         <div className="CObody">
             {disp && <div className="checkoutWrapperReal">
-                <form className="formWrapper" onSubmit={submitted}>
+                <form className="formWrapper" onSubmit={submitted} id = "myform">
                     <h1 className="contactWrapper">Contact Information</h1>
                     <div className="nameWrapper">
                         <input className="formsnametext checkout" placeholder="First Name" required></input>
@@ -53,7 +81,7 @@ function Checkout(){
                         <input className="formsCardNumber checkout" placeholder="Card Number" required type="number"></input>
                         <input className="formsCVV checkout" placeholder="CVV" required type="number"></input>
                     </div>
-                    <button className="ChekoutNowButton fwForms">Checkout</button>
+                    {pot && <button className="ChekoutNowButton fwForms">Checkout</button>}
                     <ToastContainer />
 
 
@@ -70,6 +98,7 @@ function Checkout(){
                     </div>
                     <h4 className="totPurchase pd">Total Purchase : </h4>
                     <div className="totalCheckout pd">Rp. {numberWithCommas(tot)}</div>
+                   {!pot && <button className="ChekoutNowButton" type="submit" form="myform">Checkout</button> }
 
                 </div>
                 

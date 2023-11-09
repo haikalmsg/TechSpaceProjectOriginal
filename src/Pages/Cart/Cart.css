@@ -1,9 +1,10 @@
 .cartWrapper{
-    margin-top: 20vh;
+    margin-top: 100px;
     text-align: center;
     width: 100vw;
     margin-bottom: 20px;
     min-height: 80vh;
+    padding-top: 10vh;
 }
 .checkoutButton{
     text-align: center;

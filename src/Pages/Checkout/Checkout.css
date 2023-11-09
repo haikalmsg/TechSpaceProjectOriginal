@@ -65,7 +65,7 @@
 }
 .itemsList{
     min-height: 31vh ;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     max-height: 31vh;
 }
@@ -76,4 +76,37 @@
     padding-top: 50vh;
     padding-bottom: 50vh;
     text-align: center;
+}
+@media (min-width : 0px) and (max-width : 1090px){
+    .checkoutWrapperReal{
+        display: block;
+    }
+    .formWrapper{
+        width: 80vw;
+    }
+    .checkoutItemWrapper{
+        width: 80vw;
+        padding-top: 40px;
+    }
+    .itemsList{
+        width : 80vw
+    }
+    .fwForms{
+        width: 80vw;
+    }
+    .formsnametext{
+        width: 40vw;
+    }
+    .formsAddress{
+        width: calc(80vw - 15px);
+    }
+    .formsCardNumber{
+        width: 66vw;
+    }
+    .ChekoutNowButton{
+      float: right;
+      width: 140px;
+      margin-right: 20px;
+      
+    }
 }

@@ -8,15 +8,9 @@
 }
 
 .BannerContainer{
-    width: 100vw;
-    height: 50vh;
-    background-image: url(../../../public/bannerip15.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: block;
-    overflow-x: hidden;
-    margin-top: 100px;
+  margin-top: 100px;
+  padding-top: 5vh;
+  margin-left : 10vw
 }
 input[type=number] {
     -moz-appearance: textfield;
@@ -32,15 +26,19 @@ input::-webkit-inner-spin-button {
 @media (min-width : 1286px) and (max-width : 1720px) {
   .ProductWrapper{
     grid-template-columns: repeat(3, 1fr);
+    padding: auto;
+
   }
 }
 @media (min-width : 850px) and (max-width : 1285px) {
   .ProductWrapper{
     grid-template-columns: repeat(2, 1fr);
+    padding: auto;
   }
 }
 @media (min-width : 0px) and (max-width : 849px) {
   .ProductWrapper{
     grid-template-columns: repeat(1, 1fr);
+    margin: auto;
   }
 }

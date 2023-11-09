@@ -22,3 +22,8 @@
 .checkoutItemBlocktwo{
     padding: 20px;
 }
+@media (min-width : 0px) and (max-width : 1090px){
+    .chekOutItem{
+        width: 70vw;
+    }
+}

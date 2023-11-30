@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+THIS PROJECT CANNOT BE DEPLOYED IN GITHUB PAGES BECAUSE OF SOME BUGS THAT MAKE THE ERROR 422 HENCE IT IS MIGRATED TO TechSpaceProject
 
 ## Available Scripts
 

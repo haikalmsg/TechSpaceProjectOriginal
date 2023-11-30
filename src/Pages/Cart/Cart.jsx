@@ -31,7 +31,7 @@ function Cart(){
                 <br></br>
                 <h5 className="emptyTextSmall">Click <Link to = "/TechSpaceProject/">Here</Link> to Browse Our Collection</h5>
             </div>}
-            {disp && <div className="TableWrapper">
+            {disp && <div className="TableWrappera">
                 {PRODUCTS.map((product)=>{
                     if (cart[product.id] > 0 ){
                         return <Cartitem data = {product}/>

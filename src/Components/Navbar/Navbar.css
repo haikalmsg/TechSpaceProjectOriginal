@@ -1,11 +1,13 @@
-.link{
+.link {
     color: white;
     text-decoration: none;
 }
-.link:hover{
+
+.link:hover {
     cursor: pointer;
 }
-.navbarWrapper{
+
+.navbarWrapper {
     display: flex;
     background-color: black;
     width: 80vw;
@@ -16,18 +18,24 @@
     overflow-x: hidden;
     position: fixed;
     top: 0;
-    
+    z-index: 101; /* Increased z-index value */
+    opacity: 1;
 }
-.first{
+
+.first {
     display: flex;
     align-items: center;
-    gap : 40px;
+    gap: 40px;
 }
-.logo{
-    padding : 0;
+
+.logo {
+    padding: 0;
     height: 100px;
 }
-nav{
+
+nav {
     top: 0;
-    position: sticky;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 100;
 }

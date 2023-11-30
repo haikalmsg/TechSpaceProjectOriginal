@@ -8,7 +8,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function Checkout(){
     function getWindowDimensions() {
@@ -32,6 +33,9 @@ function Checkout(){
     
       return windowDimensions;
     }
+    useEffect(() => {
+        Aos.init();
+    }, [])
     const {height, width} = useWindowDimensions()
     let pot = true
     const {cart, getTotalAmmount, forget} = React.useContext(ShopContext)
@@ -66,7 +70,7 @@ function Checkout(){
     return(
         <div className="CObody">
             {disp && <div className="checkoutWrapperReal">
-                <form className="formWrapper" onSubmit={submitted} id = "myform">
+                <form className="formWrapper" onSubmit={submitted} id = "myform" data-aos = "fade-right">
                     <h1 className="contactWrapper">Contact Information</h1>
                     <div className="nameWrapper">
                         <input className="formsnametext checkout" placeholder="First Name" required></input>
@@ -87,7 +91,7 @@ function Checkout(){
 
 
                 </form>
-                <div className="checkoutItemWrapper">
+                <div className="checkoutItemWrapper" data-aos = "fade-left">
                     <h1 className="itemsListText">Items</h1>
                     <div className="itemsList">
                         {PRODUCTS.map((product)=>{

@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './Privacy.css'
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 function Privacy(){
+    useEffect(() => {
+        Aos.init()
+    }, [])
     return(
-        <div className="privacyWrapper">
+        <div className="privacyWrapper" data-aos = "fade-in">
          <h1 className="privacyTitle">Privacy Notice</h1>
          <h1 className="question">1. How is my privacy protected on this website?</h1>
          <p className="answer">We take your privacy seriously. Our website uses secure, encrypted connections (SSL) to protect your data. We do not sell or share your personal information with third parties without your consent.</p>

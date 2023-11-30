@@ -1,14 +1,18 @@
 import React from "react";
 import PRODUCTS from "../../Product";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ShopContext } from "../../Context/ShopContext";
 import Cartitem from "../../Components/Cart-item/CartItem";
 import './Cart.css'
 import { Link } from "react-router-dom";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 function Cart(){
+    useEffect(() => {
+        Aos.init();
+    }, [])
     const {cart, getTotalAmmount} = React.useContext(ShopContext)
 
     let tot = getTotalAmmount()
@@ -21,13 +25,13 @@ function Cart(){
     }
     console.log(disp)
     return(
-        <div className="cartWrapper">
+        <div className="cartWrapper" data-aos = "fade-up">
             {!disp && <div className="emptyWrapper">
                 <h1 className="emptyText">Your Cart is Empty</h1>
                 <br></br>
                 <h5 className="emptyTextSmall">Click <Link to = "/TechSpaceProject/">Here</Link> to Browse Our Collection</h5>
             </div>}
-            {disp && <div className="TableWrapper">
+            {disp && <div className="TableWrappera">
                 {PRODUCTS.map((product)=>{
                     if (cart[product.id] > 0 ){
                         return <Cartitem data = {product}/>

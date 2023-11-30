@@ -1,10 +1,15 @@
-import React from "react";
-import './AboutUs.css'
+import React, {useEffect} from "react";
+import './AboutUs.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function AboutUs(){
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return(
-        <div className="aboutUsWrapper">
+        <div className="aboutUsWrapper" data-aos = "fade-in">
             <h1 className="aboutUsTitle">About Us</h1>
             <p className="aboutUsText">Welcome to Tech Space – Your Ultimate Apple Destination! At Tech Space, we are more than just a store; we are your dedicated partners in the realm of Apple innovation. With a deep passion for all things Apple, we offer an unparalleled selection of cutting-edge devices and accessories, ensuring you have access to the latest technology. What sets us apart is our team of knowledgeable experts, who are not only sales professionals but also enthusiasts deeply immersed in the world of Apple. Our commitment goes beyond providing exceptional products; we offer expert guidance, top-notch repair services, and unmatched customer support, making your Apple experience seamless and enjoyable. Tech Space is not just a retail space; it's a community of Apple enthusiasts, and your satisfaction is our utmost priority. Visit us today and let us guide you through the extraordinary world of Mac, iPhone, and iPad, helping you explore the endless possibilities that Apple technology has to offer. Tech Space – Where Your Apple Journey Begins!</p>
             <br></br>

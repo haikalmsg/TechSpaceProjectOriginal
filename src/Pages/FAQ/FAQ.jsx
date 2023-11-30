@@ -1,11 +1,16 @@
-import React from "react";
+import React, {useEffect} from "react";
 import './FAQ.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 function FAQ(){
+    useEffect(() => {
+        AOS.init();
+    }, [])
     return(
-        <div className="faqWrapper">
+        <div className="faqWrapper" data-aos = "fade-in">
             <h1 className="faqTitle">Frequently Asked Questions</h1>
             <br></br>
             <h1 className="question">1. What does it mean to be an Apple Authorized Reseller?</h1>

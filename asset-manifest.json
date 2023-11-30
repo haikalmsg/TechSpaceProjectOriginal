@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/TechSpaceProject/static/css/main.bd6266e0.css",
+    "main.js": "/TechSpaceProject/static/js/main.ab0469ce.js",
+    "static/js/787.d4aba7ab.chunk.js": "/TechSpaceProject/static/js/787.d4aba7ab.chunk.js",
+    "static/media/Iphone15.png": "/TechSpaceProject/static/media/Iphone15.783ffb5076966e6cd012.png",
+    "static/media/ipadair5.png": "/TechSpaceProject/static/media/ipadair5.a1101275cfbc86fc2949.png",
+    "static/media/iphone14.png": "/TechSpaceProject/static/media/iphone14.54db644c57e163a8f8bb.png",
+    "static/media/macbookpro14.png": "/TechSpaceProject/static/media/macbookpro14.a2cc9802e805881e0d1e.png",
+    "static/media/Iphone15Pro.png": "/TechSpaceProject/static/media/Iphone15Pro.4924caade089276d3aa0.png",
+    "static/media/Touch.png": "/TechSpaceProject/static/media/Touch.87b8ff999c2cbfadb5e6.png",
+    "index.html": "/TechSpaceProject/index.html",
+    "main.bd6266e0.css.map": "/TechSpaceProject/static/css/main.bd6266e0.css.map",
+    "main.ab0469ce.js.map": "/TechSpaceProject/static/js/main.ab0469ce.js.map",
+    "787.d4aba7ab.chunk.js.map": "/TechSpaceProject/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd6266e0.css",
+    "static/js/main.ab0469ce.js"
+  ]
+}
